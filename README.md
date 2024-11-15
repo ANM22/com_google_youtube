@@ -1,5 +1,5 @@
 # com_google_youtube - WebBase plugin
-![version](https://img.shields.io/badge/version-1.1-blue)
+![version](https://img.shields.io/badge/version-1.2-blue)
 
 com_google_youtube is the plugin to embed YouTube video on ANM22 WebBase CMS.
 
@@ -7,8 +7,8 @@ com_google_youtube is the plugin to embed YouTube video on ANM22 WebBase CMS.
 *	Copy plugin folder inside WebBase plugins path. Check the WebBase developers guide to find out more.
 
 ## System Requirements
-*	WebBase engine v6
-*	WebBase editor v2.6
+*	WebBase engine v8, v10
+*	WebBase editor v3.0
 
 Download WebBase: [WebBase on GitHub](https://github.com/ANM22/WebBase)
 
