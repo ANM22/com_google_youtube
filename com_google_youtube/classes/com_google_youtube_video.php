@@ -73,20 +73,20 @@ class com_google_youtube_video extends com_anm22_wb_editor_page_element
         ?>
         <div class="<?= $this->elementPlugin ?>_<?= $this->elementClass ?> <?= $this->cssClass ?>">
             <?
-            if ($this->title != "") {
-            ?>
+            if ($this->title && $this->title != "") {
+                ?>
                 <h1 style="color:<?= $this->page->pageOptions["h1-color"] ?>;"><?= $this->title ?></h1>
-            <?
+                <?
             }
-            if ($this->videoId != "") {
-            ?>
+            if ($this->videoId && $this->videoId != "") {
+                ?>
                 <iframe src="//www.youtube.com/embed/<?= $this->videoId ?>?rel=0" frameborder="0" allowfullscreen style="width:100%; max-width:<?= $max_width ?>; height:<?= $height ?>;"></iframe>
-            <?
+                <?
             }
-            if ($this->description != "") {
-            ?>
+            if ($this->description && $this->description != "") {
+                ?>
                 <p style="color:<?= $this->page->pageOptions["p-color"] ?>;"><?= nl2br($this->description) ?></p>
-            <?
+                <?
             }
             ?>
         </div>

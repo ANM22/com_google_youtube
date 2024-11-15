@@ -68,25 +68,25 @@ class com_google_youtube_video_mail extends com_anm22_wb_editor_page_element
         ?>
         <div class="<?= $this->elementPlugin ?>_<?= $this->elementClass ?>">
             <?
-            if ($this->title != "") {
-            ?>
+            if ($this->title && $this->title != "") {
+                ?>
                 <h1 style="color:<?= $this->page->pageOptions["h1-color"] ?>;"><?= $this->title ?></h1>
-            <?
+                <?
             }
-            if ($this->videoId != "") {
-            ?>
+            if ($this->videoId && $this->videoId != "") {
+                ?>
                 <div style="position:relative;">
                     <a href="https://www.youtube.com/watch?v=<?= $this->videoId ?>">
                         <img src="http://img.youtube.com/vi/<?= $this->videoId ?>/maxresdefault.jpg" style="width:100%; height:<?= $height ?>; border:0px; margin:auto; max-width:<?= $max_width ?>; display:block;" />
                         <img src="../../ANM22WebBase/website/plugins/com_google_youtube/img/yt_icon.png" style=" position: absolute; width:66px; height:46px; margin-left:-33px; margin-top:-23px; left:50%; border:0px; top:50%;" />
                     </a>
                 </div>
-            <?
+                <?
             }
-            if ($this->description != "") {
-            ?>
+            if ($this->description && $this->description != "") {
+                ?>
                 <p style="color:<?= $this->page->pageOptions["p-color"] ?>;"><?= nl2br($this->description) ?></p>
-            <?
+                <?
             }
             ?>
         </div>
